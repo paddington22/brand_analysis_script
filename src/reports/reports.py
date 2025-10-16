@@ -33,13 +33,19 @@ class AverageRatingReport:
         return result
 
     def display(self, result: list[tuple]) -> None:
-        headers = ["", "brand", "rating"]
-        table_data = [
-            [index, *values] for index, values in enumerate(result, 1)
-        ]
+        if result:
+            headers = ["", "brand", "rating"]
+            table_data = [
+                [index, *values] for index, values in enumerate(result, 1)
+            ]
 
-        print(
-            tabulate(
-                table_data, headers=headers, tablefmt="grid", stralign="left"
+            print(
+                tabulate(
+                    table_data,
+                    headers=headers,
+                    tablefmt="grid",
+                    stralign="left",
+                )
             )
-        )
+        else:
+            print("Empty result")
