@@ -1,4 +1,4 @@
-### Для запуска скрипты выполните команды в терминале
+### Для запуска скрипта выполните команды в терминале
 ```commandline
 git clone https://github.com/paddington22/brand_analysis_script.git
 ```
@@ -20,9 +20,9 @@ pip install -r requirements.txt
 python main.py --files test_data/products1.csv test_data/products2.csv --report average-rating
 ```
 ### Пример запуска
-run.png
+![run.png](run.png)run.png
 ### Показатель покрытия тестами
-coverage.png
+![coverage.png](coverage.png)coverage.png
 
 ### Для добавления дополнительнх отчетов
 - в src/reports/reports.py реализовать класс с необходимым отчетом
