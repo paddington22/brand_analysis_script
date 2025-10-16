@@ -2,7 +2,7 @@ import os
 import csv
 
 
-def read_csv_files(paths: str) -> list[dict[str, str]]:
+def read_csv_files(paths: list) -> list[dict[str, str]]:
     data = []
     for path in paths:
         if not os.path.exists(path):
